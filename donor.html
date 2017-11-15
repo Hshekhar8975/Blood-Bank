@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>LifeSaver</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="container" style="margin-bottom: 10px;">
+		<nav class="navbar navbar-default navbar-fixed-top">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<a href="#" class="navbar-brand">LifeSaver 2.0</a>
+				</div>
+				<ul class="nav navbar-nav">
+					<li><a href="index.html">Home</a></li>					
+					<li class="active"><a href="#">Donor</a></li>
+					<li><a href="#">Request</a></li>
+					<li><a href="#">About us</a></li>
+				</ul>
+				<div class="nav navbar-nav navbar-right" style="margin-right: 1px;">
+					<button 
+						class="btn btn-success navbar-btn" 
+						style="margin-right: 5px;" 
+						onclick="document.getElementById('id01').style.display='block'">Log in
+					</button>
+				</div>
+			</div>			
+		</nav>
+	</div>
+	<div class="mybody">
+		<div style="margin-bottom: 110px;">
+			<img src="slogan1.jpg">
+		</div>
+		<h3 id="mytitle">LifeSaver 2.0:</h3>
+		<div id="myform">
+			<form class="form-horizontal">
+	  			<div class="form-group">
+	    			<label class="control-label col-sm-2" for="name">Name:</label>
+	    			<div class="col-sm-10">
+	      				<input type="text" class="form-control" id="name" placeholder="Enter Name:">
+	    			</div>
+	  			</div>
+	  			<div class="form-group">
+	    			<label class="control-label col-sm-2" for="age">Age:</label>
+	    			<div class="col-sm-10">
+	      				<input type="text" class="form-control" maxlength="2" id="age" placeholder="Enter Age:">
+	    			</div>
+	  			</div>
+	  			<div class="form-group">
+	    			<label class="control-label col-sm-2" for="blood">Blood Group:</label>
+	    			<div class="col-sm-10">
+	      				<input type="text" class="form-control" maxlength="3" id="blood" placeholder="Enter Blood Group:">
+	    			</div>
+	  			</div>
+	  			<div class="form-group">
+	    			<label class="control-label col-sm-2" for="sex">Sex:</label>
+	    			<div class="col-sm-10">
+	      				<input type="text" class="form-control" id="sex" placeholder="Enter sex:">
+	    			</div>
+	  			</div>
+	  			<div class="form-group">
+	    			<label class="control-label col-sm-2" for="phone">Phone No.:</label>
+	    			<div class="col-sm-10">
+	      				<input type="text" class="form-control" id="phone" maxlength="10" placeholder="Enter Phone No:">
+	    			</div>
+	  			</div>
+	  			<div class="form-group">
+	    			<label class="control-label col-sm-2" for="address">Address:</label>
+	    			<div class="col-sm-10"> 
+	      				<input type="text" class="form-control" id="address" maxlength="50" placeholder="Enter Address:">
+	    			</div>
+	  			</div>
+	  			<div class="form-group"> 
+	    			<div class="col-sm-offset-2 col-sm-10">
+	      				<button type="submit" class="btn btn-success">Submit</button>
+	    			</div>
+	  			</div>
+			</form>
+		</div>
+	</div>
+	<div id="id01" class="modal">  
+  		<form class="modal-content animate" action="action_page.php" method="get">
+    		<div class="imgcontainer">
+      			<span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      			<img src="pic.png" alt="Avatar" class="avatar">
+    		</div>
+
+    		<div class="container" style="width: 100%;">
+      			<label><b>Username</b></label>
+      			<input type="text" placeholder="Enter Username" name="uname" required>
+
+      			<label><b>Password</b></label>
+      			<input type="password" placeholder="Enter Password" name="psw" required>
+		        
+      			<button type="submit">Login</button>
+      			<input type="checkbox" checked="checked"> Remember me
+    		</div>
+
+		    <div class="container" style="background-color:#f1f1f1; width: 100%;">
+      			<button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      			<span class="psw">Forgot <a href="#">password?</a></span>
+    		</div>
+  		</form>
+	</div>
+	<script>
+		// Get the modal
+		var modal = document.getElementById('id01');
+
+		// When the user clicks anywhere outside of the modal, close it
+		window.onclick = function(event) {
+    		if (event.target == modal) {
+        		modal.style.display = "none";
+    		}
+		}
+	</script>
+</body>
+</html>
