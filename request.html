@@ -16,8 +16,8 @@
 				</div>
 				<ul class="nav navbar-nav">
 					<li><a href="lg_home.html">Home</a></li>					
-					<li class="active"><a href="donor.html">Donor</a></li>
-					<li><a href="request.html">Request</a></li>
+					<li><a href="donor.html">Donor</a></li>
+					<li class="active"><a href="request.html">Request</a></li>
 					<li><a href="about1.html">About us</a></li>
 				</ul>
 				<div class="nav navbar-nav navbar-right" style="margin-right: 1px;">
@@ -30,8 +30,8 @@
                   					<li><a href="#">My Request</a></li>
                 				</ul>
               				</div>
-			            </li>
-			            <li>
+            			</li>
+            			<li>
               				<button class="btn btn-success navbar-btn" onclick="document.getElementById('id01').style.display='block'">Log Out</button>
             			</li>
           			</ul>
@@ -41,51 +41,40 @@
 	</div>
 	<div class="mybody">
 		<div style="margin-bottom: 50px;">
-			<img src="slogan1.jpg">
+			<img src="bkg1.jpg" width="1349px">
 		</div>
 		<h3 id="mytitle">LifeSaver 2.0:</h3>
 		<div id="myform" style="margin-bottom: 40px;">
-			<form class="form-horizontal" action="donor_regis.php" method="post">
+			<form class="form-horizontal" action="new_req.php" method="post">
 	  			<div class="form-group">
-	    			<label class="control-label col-sm-2" for="dname">Name:</label>
+	    			<label class="control-label col-sm-2" for="name">Name:</label>
 	    			<div class="col-sm-10">
-	      				<input type="text" class="form-control" id="name" name="dname" placeholder="Enter Name:">
-	    			</div>
-	  			</div>
-	  			<div class="form-group">
-	    			<label class="control-label col-sm-2" for="dage">Age:</label>
-	    			<div class="col-sm-10">
-	      				<input type="text" class="form-control" maxlength="2" id="age" name="dage" placeholder="Enter Age:">
-	    			</div>
-	  			</div>
-	  			<div class="form-group">
-	    			<label class="control-label col-sm-2" for="dblood">Blood Group:</label>
-	    			<div class="col-sm-10">
-	      				<input type="text" class="form-control" maxlength="3" id="blood" name="dblood" placeholder="Enter Blood Group:">
-	    			</div>
-	  			</div>
-	  			<div class="form-group">
-	    			<label class="control-label col-sm-2" for="sex">Sex:</label>
-	    			<div class="col-sm-10">
-	      				<input type="text" class="form-control" id="sex" name="dsex" placeholder="Enter sex:">
+	      				<input type="text" class="form-control" id="name" name="name" placeholder="Enter Name:">
 	    			</div>
 	  			</div>
 	  			<div class="form-group">
 	    			<label class="control-label col-sm-2" for="email">Email:</label>
 	    			<div class="col-sm-10">
-	      				<input type="text" class="form-control" id="email" name="demail" placeholder="Enter Email:">
+	      				<input type="text" class="form-control" id="email" name="email" placeholder="Enter Email:">
+	    			</div>
+	  			</div>
+	  			<div class="form-group">
+	    			<label class="control-label col-sm-2" for="blood">Required Blood Group:</label>
+	    			<div class="col-sm-10">
+	      				<input type="text" class="form-control" maxlength="3" id="blood" name="blood" placeholder="Enter Blood Group:">
+	    			</div>
+	  			</div>
+	  			<div class="form-group">
+	    			<label class="control-label col-sm-2" for="quant">Quantity(1,2,..):</label>
+	    			<div class="col-sm-10">
+	      				<input type="text" maxlength="1" class="form-control" id="quant" name="quant" placeholder="Enter Quantity:">
+	      				<p>Note: 1 Quantity = 350ml of blood.</p>
 	    			</div>
 	  			</div>
 	  			<div class="form-group">
 	    			<label class="control-label col-sm-2" for="phone">Phone No.:</label>
 	    			<div class="col-sm-10">
-	      				<input type="text" class="form-control" id="phone" maxlength="10" name="dphone" placeholder="Enter Phone No:">
-	    			</div>
-	  			</div>
-	  			<div class="form-group">
-	    			<label class="control-label col-sm-2" for="address">Address:</label>
-	    			<div class="col-sm-10"> 
-	      				<input type="text" class="form-control" id="address" maxlength="50" name="daddress" placeholder="Enter Address:">
+	      				<input type="text" class="form-control" id="phone" maxlength="10" name="phone" placeholder="Enter Phone No:">
 	    			</div>
 	  			</div>
 	  			<div class="form-group"> 
@@ -109,12 +98,9 @@
       			<span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
       			<img src="pic.png" alt="Avatar" class="avatar">
     		</div>
-
     		<div class="container" style="width: 100%;">
       			<button>Log Out</button>
-    		</div>
-
-		    
+    		</div>		    
   		</form>
 	</div>
 	<script>

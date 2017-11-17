@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<head>
+	<title>LifeSaver</title>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	
+</head>
+<body>
+	<div id="id01" class="modal">  
+  		<form class="modal-content animate" action="index.html">
+    		<div class="imgcontainer">
+      			<span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      			<img src="pic.png" alt="Avatar" class="avatar">
+    		</div>
+    		<div class="container" style="width: 100%;">
+      			<button>Log Out</button>
+    		</div>		    
+  		</form>
+	</div>
+	<div class="container" style="margin-bottom: 10px;">
+		<nav class="navbar navbar-default navbar-fixed-top">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<a href="#" class="navbar-brand">LifeSaver 2.0</a>
+				</div>
+				<ul class="nav navbar-nav">
+					<li><a href="lg_home.html">Home</a></li>					
+					<li><a href="donor.html">Donor</a></li>
+					<li><a href="request.html">Request</a></li>
+					<li class="active"><a href="#">About us</a></li>
+				</ul>
+				<div class="nav navbar-nav navbar-right" style="margin-right: 1px;">
+          			<ul class="nav navbar-nav">
+            			<li style="margin-right: 5px;">
+              				<div class="dropdown">
+                				<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown"><span class="caret"></span></button>
+                				<ul class="dropdown-menu">
+                  					<li><a href="history.php">History</a></li>
+                  					<li><a href="#">My Request</a></li>
+                				</ul>
+              				</div>
+            			</li>
+            			<li>
+              				<button class="btn btn-success navbar-btn" onclick="document.getElementById('id01').style.display='block'">Log Out</button>
+            			</li>
+          			</ul>
+				</div>
+			</div>			
+		</nav>
+	</div>
+	<div class="container-fluid" id="about">
+		<h1><u>About us:</u></h1>
+		<div id="abt">
+			<p>
+				<img src="poster1.jpg"  id="pstr">
+				Indian Blood Bank Society is a noble charity organization formed with the active initiation and guidance of Lt. Col. (Hon.) Dr. Mohanlal, under Act For Humanity. Act For Humanity is a Non-profit organization founded by Mr. Esahaque Eswaramangalam and a group of young social workers during 2004, with Lt. Col. (Hon.) Dr. Mohanlal as its goodwill ambassador, aiming to fight against terrorism and fanatic activities. Act For Humanity aims to enhance the humanistic elements of each individual and prepare them to be tolerant, responsive, accountable and responsible social citizen.
+				<br><br>	
+				Indian Blood Bank is aimed at promoting the awareness of blood donation among the public. It is committed to stay ahead of all linguistic-rational-religious-political differences and shall be fully focusing its objectives in health care activities, with technology support from WebCastle Media Pvt. Ltd., Cochin.
+ 				<br><br>
+				Indian Blood Bank Society is registered as per The TCLSCS Registration Act XII of 1955 under the Government of Kerala. Initial operation of Indian Blood Bank shall be limited to Kerala and in the coming years its services shall be available all over India.</p>
+		</div>
+	</div>
+	<div class="container">
+		<footer class="nav navbar-default navbar-fixed-bottom">
+			<center>
+				<p>Copyright &copy; Himanshu Shekhar, Deepak Tiwari and Harsh Jain.</p>
+			</center>
+		</footer>
+	</div>
+	<script>
+		// Get the modal
+		var modal = document.getElementById('id01');
+
+		// When the user clicks anywhere outside of the modal, close it
+		window.onclick = function(event) {
+    		if (event.target == modal) {
+        		modal.style.display = "none";
+    		}
+		}
+	</script>
+</body>
+</html>
